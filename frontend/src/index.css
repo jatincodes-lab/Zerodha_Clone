@@ -1,0 +1,23 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-link, .footerAnchors {
+  color: #333;
+  text-decoration: none;
+  margin-right: 0.7rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.nav-link:hover{
+  color:rgb(37, 100, 195),
+}
+
+.footerAnchors:hover {
+    color:rgb(37, 100, 195) !important
+}
