@@ -2,14 +2,9 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
-
-const Signup = () => {
+const Login = () => {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    password: "",
-  });
+  const [formData, setFormData] = useState({ email: "", password: "" });
 
   const handleError = (err) =>
     toast.error(err, {
@@ -24,48 +19,33 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/signup",
+        "http://localhost:8080/login",
         formData,
         {
           withCredentials: true,
         }
       );
-      // Check the status code of the response
-      if (data.success) {
-        handleSuccess(data.message);
+      console.log(data);
+      const { success, message } = data;
+      if (success) {
+        handleSuccess(message);
         setTimeout(() => {
           navigate("/");
         }, 1000);
       } else {
-        handleError(data.message);
+        handleError(message);
       }
     } catch (error) {
-      console.log("Error signing up");
+      console.error("Error logging in", error);
     }
-    setFormData({
-      username: "",
-      email: "",
-      password: "",
-    });
+    setFormData({ email: "", password: "" });
   };
   return (
     <div className="container mt-5">
       <div className="row justify-content-center">
         <div className="col-md-6">
-          <h3 className="text-center mb-4">Signup</h3>
+          <h3 className="text-center mb-4">Login</h3>
           <form onSubmit={handelSubmit}>
-            <div className="mb-3">
-              <label className="form-label">Username</label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Enter Username"
-                value={formData.username}
-                onChange={(e) => {
-                  setFormData({ ...formData, username: e.target.value });
-                }}
-              />
-            </div>
             <div className="mb-3">
               <label className="form-label">Email address</label>
               <input
@@ -91,10 +71,10 @@ const Signup = () => {
               />
             </div>
             <button type="submit" className="btn btn-primary w-100">
-              Signup
+              Login
             </button>
             <p className="mt-3 text-center">
-              Already have an account? <Link to="/login">Login</Link>
+              Don't have an account? <Link to="/signup">Signup</Link>
             </p>
           </form>
           <ToastContainer />
@@ -104,4 +84,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;

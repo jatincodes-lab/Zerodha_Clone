@@ -24,29 +24,29 @@ export default function TopNav() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="nav m-auto d-flex justify-content-end">
-            <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to="/signup">
+          <ul className="nav m-auto d-flex justify-content-end">
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to="/signup">
                 Signup
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to="/about">
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to="/about">
                 About
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to="/product">
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to="/product">
                 Products
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to="/pricing">
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to="/pricing">
                 Pricing
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to="/support">
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to="/support">
                 Support
               </Link>
             </li>

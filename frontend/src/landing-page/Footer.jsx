@@ -33,15 +33,15 @@ export default function Footer() {
           ></i>
           <hr style={{ opacity: "0.4 !important" }} />
           <i
-            class="fa-brands fa-youtube fa-lg me-3"
+            className="fa-brands fa-youtube fa-lg me-3"
             style={{ opacity: "0.8" }}
           ></i>
           <i
-            class="fa-brands fa-whatsapp fa-lg me-3"
+            className="fa-brands fa-whatsapp fa-lg me-3"
             style={{ opacity: "0.8" }}
           ></i>
           <i
-            class="fa-brands fa-telegram fa-lg me-3"
+            className="fa-brands fa-telegram fa-lg me-3"
             style={{ opacity: "0.8" }}
           ></i>
         </div>
