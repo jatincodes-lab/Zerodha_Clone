@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 8080;
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://zerodha-clone-green-one.vercel.app/", // frontend origin
+    origin: "https://zerodha-clone-green-one.vercel.app", // frontend origin
     credentials: true, // allow credentials (cookies)
   })
 );
