@@ -14,7 +14,7 @@ const Signup = async (req, res) => {
   const newUser = new User({ username, email, password });
   const token = createSecretToken(newUser._id);
   res.cookie("token", token, {
-    httpOnly: false,
+    httpOnly: true,
   });
 
   try {
