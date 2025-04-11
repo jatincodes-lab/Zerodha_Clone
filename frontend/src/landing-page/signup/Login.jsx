@@ -19,7 +19,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/login",
+        "https://zerodha-clone-aler.vercel.app/login",
         formData,
         {
           withCredentials: true,
@@ -30,7 +30,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          navigate("/");
+          navigate("https://zerodha-clone-25ma.vercel.app/");
         }, 1000);
       } else {
         handleError(message);
