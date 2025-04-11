@@ -24,7 +24,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/signup",
+        "https://zerodha-clone-aler.vercel.app/signup",
         formData,
         {
           withCredentials: true,
