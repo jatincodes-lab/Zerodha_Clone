@@ -34,7 +34,7 @@ const Signup = () => {
       if (data.success) {
         handleSuccess(data.message);
         setTimeout(() => {
-          navigate("/");
+          navigate("https://zerodha-clone-25ma.vercel.app");
         }, 1000);
       } else {
         handleError(data.message);
