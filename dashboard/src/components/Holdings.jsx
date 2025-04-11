@@ -1,21 +1,34 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import { VerticalBarChart } from "./VerticalBarChart";
 
 const Holdings = () => {
-
   const [allHoldings, setAllHoldings] = useState([]);
 
-useEffect(() => {
-  axios.get("http://localhost:8080/api/allHoldings")
-    .then((res) => {
-      setAllHoldings(res.data);
-    })
-    .catch((err) => {
-      console.error("Error fetching all holdings", err);
-    })
-}, []);
-  
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/api/allHoldings")
+      .then((res) => {
+        setAllHoldings(res.data);
+      })
+      .catch((err) => {
+        console.error("Error fetching all holdings", err);
+      });
+  }, []);
+
+  const labels = allHoldings.map((stock) => stock.name);
+
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: "Stocks",
+        data: allHoldings.map((stock) => stock.qty),
+        backgroundColor: "rgba(255, 99, 132, 0.5)",
+      },
+    ],
+  };
+
   return (
     <>
       <h3 className="title">Holdings ({allHoldings.length})</h3>
@@ -78,6 +91,8 @@ useEffect(() => {
           <p>P&L</p>
         </div>
       </div>
+
+      <VerticalBarChart data={data} />
     </>
   );
 };
