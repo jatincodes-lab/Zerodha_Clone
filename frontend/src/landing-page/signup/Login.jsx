@@ -30,7 +30,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          navigate("https://zerodha-clone-25ma.vercel.app/");
+          window.location.href = "https://zerodha-clone-25ma.vercel.app";
         }, 1000);
       } else {
         handleError(message);
