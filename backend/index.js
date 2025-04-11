@@ -14,12 +14,23 @@ const PORT = process.env.PORT || 8080;
 
 // Middleware
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: "https://zerodha-clone-green-one.vercel.app", // frontend origin
-    credentials: true, // allow credentials (cookies)
-  })
-);
+
+const allowedOrigins = [
+  "https://zerodha-clone-green-one.vercel.app",
+  "https://zerodha-clone-25ma.vercel.app"
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+}));
+
 app.use(bodyParser.json());
 
 app.use("/", authRoutes);
