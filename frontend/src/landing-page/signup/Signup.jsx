@@ -33,8 +33,8 @@ const Signup = () => {
       // Check the status code of the response
       if (data.success) {
         handleSuccess(data.message);
-        setTimeout(() => {
-          navigate("https://zerodha-clone-25ma.vercel.app");
+        setTimeout( async () => {
+         await axios.get("https://zerodha-clone-25ma.vercel.app");
         }, 1000);
       } else {
         handleError(data.message);
