@@ -4,7 +4,7 @@ export default function Stats() {
   return (
     <div className="container my-5">
       <div className="row p-5">
-        <div className="col-6 p-x5">
+        <div className="col col-12 col-md-6 p-x5">
           <h1 className="mb-5 fw-normal">Trust with confidence</h1>
           <div className="mb-4 ">
             <h3 className="fw-normal">Costumer-first always</h3>
@@ -37,7 +37,7 @@ export default function Stats() {
             </p>
           </div>
         </div>
-        <div className="col-6 text-center">
+        <div className="col col-12 col-md-6 text-center">
           <img
             src="media\images\ecosystem.png"
             alt=""

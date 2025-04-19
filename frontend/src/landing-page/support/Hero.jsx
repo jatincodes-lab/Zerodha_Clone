@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="text-white" style={{ background: "#387ED1" }}>
       <div className="row p-5 mx-5">
-        <div className="col-7">
+        <div className="col col-12 col-md-7">
           <h4 className="mb-5">Support Portal</h4>
           <h4 className="mb-5">
             Search for an answer or browse help topics to create a ticket
@@ -16,7 +16,7 @@ export default function Hero() {
             placeholder="Eg:how do i activate F&O, why is my order getting rejected ..."
           />
           <div className="row">
-            <div className="col-4">
+            <div className="col col-12 col-md-4">
               <p
                 style={{ borderBottom: "1px solid white" }}
                 className="text-center fw-medium fs-6 px-3 my-3"
@@ -24,7 +24,7 @@ export default function Hero() {
                 Track account opening
               </p>
             </div>
-            <div className="col-4">
+            <div className="col col-6 col-md-4">
               <p
                 style={{ borderBottom: "1px solid white" }}
                 className="text-center fw-medium fs-6 px-1 my-3"
@@ -50,7 +50,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="col-5 mb-5">
+        <div className="col col-12 col-md-5 mb-5">
           <div className="text-end ">
             <a
               href=""
@@ -62,8 +62,8 @@ export default function Hero() {
           <div className="my-5">
             <h4 className="mt-5">Featured</h4>
             <br />
-            <ol>
-              <li >
+            <ol className="featureInfo">
+              <li>
                 <a className="text-white" href="">
                   Change in expiry day of NSE derivative contracts from April
                   04, 2025 [Withheld]

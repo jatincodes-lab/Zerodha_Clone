@@ -1,4 +1,5 @@
 import React from "react";
+import "./Hero.css";
 
 export default function Hero() {
   return (
@@ -6,7 +7,7 @@ export default function Hero() {
       <div className="container text-center my-5">
         <div className="row mb-5">
           <img
-            className="col p-5 mb-3"
+            className="hero-img col p-5 mb-3"
             src="./media/images/homeHero.png"
             alt="HomeHero Image"
           />

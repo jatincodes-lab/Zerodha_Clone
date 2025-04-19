@@ -1,16 +1,17 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+import './TopNav.css'
 
 export default function TopNav() {
   return (
     <nav
-      className="navbar navbar-expand-lg px-5 py-3 border sticky-top"
+      className="navbar navbar-expand-lg px-5 py-3 border sticky-top "
       style={{ backgroundColor: "#fff" }}
     >
-      <div className="container">
-        <Link to="/" className="navbar-brand">
+      <div className="container d-flex justify-content-between">
+        <Link to="/" className="navbar-brand col-5">
           {" "}
-          <img src="media/images/logo.svg" alt="" style={{ width: "20%" }} />
+          <img src="media/images/logo.svg" alt="" style={{ width: "40%" }} />
         </Link>
         <button
           className="navbar-toggler"
@@ -26,7 +27,11 @@ export default function TopNav() {
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="nav m-auto d-flex justify-content-end">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/signup">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/signup"
+              >
                 Signup
               </Link>
             </li>
@@ -36,17 +41,29 @@ export default function TopNav() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/product">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/product"
+              >
                 Products
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/pricing">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/pricing"
+              >
                 Pricing
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/support">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/support"
+              >
                 Support
               </Link>
             </li>

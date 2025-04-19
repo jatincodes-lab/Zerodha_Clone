@@ -1,10 +1,11 @@
 import React from "react";
+import './Team.css';
 
 export default function Team() {
   return (
     <div className="container my-5 border-top">
       <div className="row p-5">
-        <div className="col-6 p-5 lh-base">
+        <div className="col col-12 col-md-6 p-5 lh-base">
           <p className="fw-medium opacity-50" style={{ fontSize: "17px" }}>
             We kick-started operations on the 15th of August, 2010 with the goal
             of breaking all barriers that traders and investors face in India in
@@ -22,7 +23,7 @@ export default function Team() {
             all Indian retail trading volumes.
           </p>
         </div>
-        <div className="col-6 p-5 lh-base">
+        <div className="col col-12 col-md-6 p-5 lh-base">
           <p className="fw-medium opacity-50" style={{ fontSize: "17px" }}>
             In addition, we run a number of popular open online educational and
             community initiatives to empower retail traders and investors.
@@ -39,17 +40,17 @@ export default function Team() {
         </div>
         <h2 className="text-center p-5">People</h2>
         <div className="row">
-          <div className="col-5 p-5">
+          <div className="col col-12 col-md-5 p-5">
             <img
               src="media\images\nithinKamath.jpg"
               alt=""
               style={{ width: "90%" }}
               className="rounded-circle ms-5"
             />
-            <h5 className="text-center my-3 ms-5 opacity-75">Nithin Kamath</h5>
-            <p className="text-center my-3 ms-5 opacity-75">Founder, CEO</p>
+            <h5 className="co text-center my-3 ms-5 opacity-75">Nithin Kamath</h5>
+            <p className="co text-center my-3 ms-5 opacity-75">Founder, CEO</p>
           </div>
-          <div className="col-7 p-5">
+          <div className="col col-12 col-md-7 p-5">
             <p
               className="fw-medium opacity-75 mt-2 me-3"
               style={{ fontSize: "16px" }}

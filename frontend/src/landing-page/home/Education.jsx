@@ -4,10 +4,10 @@ export default function Education() {
   return (
     <div className="container my-5">
       <div className="row">
-        <div className="col p-4">
+        <div className="col col-12 col-md-6 p-4">
           <img className="pe-5" style={{width:"90%"}} src="media/images/education.svg" alt="" />
         </div>
-        <div className="col p-4 my-5">
+        <div className="col col-12 col-md-6 p-4 my-5">
           <h2 className="mb-4">Free and open market education</h2>
           <div>
             <p>

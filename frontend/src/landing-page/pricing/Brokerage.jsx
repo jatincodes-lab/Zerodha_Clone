@@ -5,7 +5,7 @@ export default function Brokerage() {
     <div className="container my-5">
       <div className="row">
         <h2 className="opacity-75">Charges explained</h2>
-        <div className="col-6 text-muted">
+        <div className="col col-12 col-md-6 text-muted">
           <div className="my-4">
             <h6 className="mb-4">Securities/Commodities transaction tax</h6>
             <p className="fw-normal" style={{ fontSize: "14px" }}>
@@ -61,23 +61,21 @@ export default function Brokerage() {
           </div>
           <div className="my-4">
             <h6 className="mb-4">NRI brokerage charges</h6>
-            <p className="fw-normal" style={{ fontSize: "14px" }}>
-              <ul>
-                <li>₹100 per order for futures and options</li>
-                <li>
-                  For a non-PIS account, 0.5% or ₹100 per executed order for
-                  equity (whichever is lower).
-                </li>
-                <li>
-                  For a PIS account, 0.5% or ₹200 per executed order for equity
-                  (whichever is lower).
-                </li>
-                <li>
-                  ₹500 + GST as yearly account maintenance charges (AMC)
-                  charges.
-                </li>
-              </ul>
-            </p>
+
+            <ul className="fw-normal" style={{ fontSize: "14px" }}>
+              <li>₹100 per order for futures and options</li>
+              <li>
+                For a non-PIS account, 0.5% or ₹100 per executed order for
+                equity (whichever is lower).
+              </li>
+              <li>
+                For a PIS account, 0.5% or ₹200 per executed order for equity
+                (whichever is lower).
+              </li>
+              <li>
+                ₹500 + GST as yearly account maintenance charges (AMC) charges.
+              </li>
+            </ul>
           </div>
           <div className="my-4">
             <h6 className="mb-4">Account with debit balance</h6>
@@ -90,42 +88,37 @@ export default function Brokerage() {
             <h6 className="mb-4">
               Charges for Investor's Protection Fund Trust (IPFT) by NSE
             </h6>
-            <p className="fw-normal" style={{ fontSize: "14px" }}>
-              <ul>
-                <li>
-                  Equity and Futures - ₹10 per crore + GST of the traded value.
-                </li>
-                <li>
-                  Options - ₹50 per crore + GST traded value (premium value).
-                </li>
-                <li>
-                  Currency - ₹0.05 per lakh + GST of turnover for Futures and ₹2
-                  per lakh + GST of premium for Options.
-                </li>
-              </ul>
-            </p>
+
+            <ul className="fw-normal" style={{ fontSize: "14px" }}>
+              <li>
+                Equity and Futures - ₹10 per crore + GST of the traded value.
+              </li>
+              <li>
+                Options - ₹50 per crore + GST traded value (premium value).
+              </li>
+              <li>
+                Currency - ₹0.05 per lakh + GST of turnover for Futures and ₹2
+                per lakh + GST of premium for Options.
+              </li>
+            </ul>
           </div>
           <div className="my-4">
             <h6 className="mb-4">Margin Trading Facility (MTF)</h6>
-            <p className="fw-normal" style={{ fontSize: "14px" }}>
-              <ul>
-                <li>
-                  MTF Interest: 0.04% per day (₹40 per lakh) on the funded
-                  amount. The interest is applied from T+1 day until the day MTF
-                  stocks are sold.
-                </li>
-                <li>
-                  MTF Brokerage: 0.3% or Rs. 20/executed order, whichever is
-                  lower.
-                </li>
-                <li>
-                  MTF pledge charge: ₹30 + GST per pledge request per ISIN.
-                </li>
-              </ul>
-            </p>
+            <ul className="fw-normal" style={{ fontSize: "14px" }}>
+              <li>
+                MTF Interest: 0.04% per day (₹40 per lakh) on the funded amount.
+                The interest is applied from T+1 day until the day MTF stocks
+                are sold.
+              </li>
+              <li>
+                MTF Brokerage: 0.3% or Rs. 20/executed order, whichever is
+                lower.
+              </li>
+              <li>MTF pledge charge: ₹30 + GST per pledge request per ISIN.</li>
+            </ul>
           </div>
         </div>
-        <div className="col-6 text-muted">
+        <div className="col col-12 col-md-6 text-muted">
           <div className="my-4">
             <h6 className="mb-4">GST</h6>
             <p className="fw-normal" style={{ fontSize: "14px" }}>
@@ -211,12 +204,10 @@ export default function Brokerage() {
             <h6 className="mb-4">
               Trading using 3-in-1 account with block functionality
             </h6>
-            <p className="fw-normal" style={{ fontSize: "14px" }}>
-              <ul>
+              <ul className="fw-normal" style={{ fontSize: "14px" }}>
                 <li>Delivery & MTF Brokerage: 0.5% per executed order.</li>
                 <li>Intraday Brokerage: 0.05% per executed order.</li>
               </ul>
-            </p>
           </div>
         </div>
         <div className="my-4">

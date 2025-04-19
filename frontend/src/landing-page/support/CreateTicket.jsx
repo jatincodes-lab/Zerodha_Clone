@@ -7,9 +7,9 @@ export default function CreateTicket() {
         <h4 className="text-muted my-4">
           To create a ticket, select a relevant topic
         </h4>
-        <div className="col-4 my-4">
+        <div className="col col-6 col-md-4 my-4">
           <h5 className="mb-3">
-            <i class="fa-solid fa-circle-plus fa-xs"></i> Account Opening
+            <i className="fa-solid fa-circle-plus fa-xs"></i> Account Opening
           </h5>
           <div className="ps-3">
             <a className="text-decoration-none " href="">
@@ -34,9 +34,9 @@ export default function CreateTicket() {
             <br />
           </div>
         </div>
-        <div className="col-4 my-4">
+        <div className="col col-6 col-md-4 my-4">
           <h5 className="mb-3">
-            <i class="fa-solid fa-user fa-sm"></i> Your Zerodha Account
+            <i className="fa-solid fa-user fa-sm"></i> Your Zerodha Account
           </h5>
           <div className="ps-3">
             <a className="text-decoration-none " href="">
@@ -61,9 +61,9 @@ export default function CreateTicket() {
             <br />
           </div>
         </div>
-        <div className="col-4 my-4">
+        <div className="col col-6 col-md-4 my-4">
           <h5 className="mb-3">
-            <i class="fa-solid fa-chart-bar fa-rotate-270"></i> Kite
+            <i className="fa-solid fa-chart-bar fa-rotate-270"></i> Kite
           </h5>
           <div className="ps-3">
             <a className="text-decoration-none " href="">
@@ -91,9 +91,9 @@ export default function CreateTicket() {
             </a>
           </div>
         </div>
-        <div className="col-4 my-4">
+        <div className="col col-6 col-md-4 my-4">
           <h5 className="mb-3">
-            <i class="fa-solid fa-wallet"></i> Funds
+            <i className="fa-solid fa-wallet"></i> Funds
           </h5>
           <div className="ps-3">
             <a className="text-decoration-none " href="">
@@ -114,9 +114,9 @@ export default function CreateTicket() {
             <br />
           </div>
         </div>
-        <div className="col-4 my-4">
+        <div className="col col-6 col-md-4 my-4">
           <h5 className="mb-3">
-            <i class="fa-solid fa-chart-line"></i> Console
+            <i className="fa-solid fa-chart-line"></i> Console
           </h5>
           <div className="ps-3">
             <a className="text-decoration-none " href="">
@@ -144,9 +144,9 @@ export default function CreateTicket() {
             </a>
           </div>
         </div>
-        <div className="col-4 my-4">
+        <div className="col col-6 col-md-4 my-4">
           <h5 className="mb-3">
-            <i class="fa-solid fa-coins"></i> Coin
+            <i className="fa-solid fa-coins"></i> Coin
           </h5>
           <div className="ps-3">
             <a className="text-decoration-none " href="">

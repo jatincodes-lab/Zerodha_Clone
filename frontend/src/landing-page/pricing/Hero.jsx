@@ -8,7 +8,7 @@ export default function Hero() {
         <h4 className="text-muted">List of all charges and taxes</h4>
       </div>
       <div className="row">
-        <div className="col-4 p-5">
+        <div className="col col-12 col-md-4 p-5">
           <img
             src="media/images/pricing0.svg"
             style={{ width: "90%", marginLeft: "1rem" }}
@@ -20,7 +20,7 @@ export default function Hero() {
             0 brokerage.
           </p>
         </div>
-        <div className="col-4 p-5">
+        <div className="col col-12 col-md-4 p-5">
           <img
             src="media/images/intradayTrades.svg"
             style={{ width: "90%", marginLeft: "1rem" }}
@@ -33,7 +33,7 @@ export default function Hero() {
             ₹20 on all option trades.
           </p>
         </div>
-        <div className="col-4 p-5">
+        <div className="col col-12 col-md-4 p-5">
           <img
             src="media/images/pricing0.svg"
             style={{ width: "90%", marginLeft: "1rem" }}
