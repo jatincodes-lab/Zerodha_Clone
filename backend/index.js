@@ -17,8 +17,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   "https://zerodha-clone-green-one.vercel.app",
-  "https://zerodha-clone-25ma.vercel.app",
-  "https://localhost:8080"
+  "https://zerodha-clone-25ma.vercel.app"
 ];
 
 app.use(cors({
