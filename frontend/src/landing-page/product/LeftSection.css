@@ -1,0 +1,9 @@
+@media (max-width: 500px) {
+    .leftImg img{
+        width: 20rem;
+    }
+
+    .leftInfo {
+        margin-left: 0px !important;
+    }
+}

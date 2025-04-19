@@ -1,0 +1,13 @@
+@media (max-width: 500px) {
+    .rightImg {
+        padding: 0 !important;
+    }
+    .rightImg img{
+        width: 20rem;
+        margin-left: 2rem;
+    }
+
+    .rightInfo {
+        margin: 0px !important;
+    }
+}

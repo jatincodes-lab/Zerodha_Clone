@@ -6,12 +6,12 @@ export default function Awards() {
       <div className="container my-5">
         <div className="row mt-5 p-4 ">
           <img
-            className="col-6  p-5"
+            className="col col-md-12 col-lg-6 p-5"
             src="media/images/largestBroker.svg"
             alt=""
           />
 
-          <div className="col-6 text-start p-5 mt-5">
+          <div className="col col-md-12 col-lg-6 text-start p-5 mt-5">
             <h2>Largest stock broker in India</h2>
             <p className="mb-5 fw-semibold">
               2+ million Zerodha clients contribute to over 15% of all retail

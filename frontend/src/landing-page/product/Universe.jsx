@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './Universe.css'
 
 export default function Universe() {
   return (
@@ -13,7 +14,7 @@ export default function Universe() {
           </h6>
         </div>
         <div className="row p-5">
-          <div className="col-4 mt-5 text-center">
+          <div className="col col-12 col-md-4 mt-5 text-center">
             <img
               src="media\images\zerodhaFundhouse.png"
               alt=""
@@ -25,7 +26,7 @@ export default function Universe() {
               transparent index funds to help you save for your goals.
             </p>
           </div>
-          <div className="col-4 mt-5 text-center">
+          <div className="col col-12 col-md-4 mt-5 text-center">
             <img
               src="media\images\tijori.svg"
               alt=""
@@ -37,7 +38,7 @@ export default function Universe() {
               stocks, sectors, supply chains, and more. .
             </p>
           </div>
-          <div className="col-4 mt-5 text-center">
+          <div className="col col-12 col-md-4 mt-5 text-center">
             <img
               src="media\images\streakLogo.png"
               alt=""
@@ -49,7 +50,7 @@ export default function Universe() {
               strategies without coding.
             </p>
           </div>
-          <div className="col-4 mt-5 text-center">
+          <div className="col col-12 col-md-4 mt-5 text-center">
             <img
               src="media\images\smallcaseLogo.png"
               alt=""
@@ -61,7 +62,7 @@ export default function Universe() {
               baskets of stocks on ETFs.
             </p>
           </div>
-          <div className="col-4 mt-5 text-center">
+          <div className="col col-12 col-md-4 mt-5 text-center">
             <img
               src="media\images\dittoLogo.png"
               alt=""
@@ -73,7 +74,7 @@ export default function Universe() {
               mis-selling. Sign up for free.
             </p>
           </div>
-          <div className="col-4 text-center mt-5">
+          <div className="col col-12 col-md-4 text-center mt-5">
             <img
               src="media\images/sensibullLogo.svg"
               alt=""

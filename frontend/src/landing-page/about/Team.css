@@ -1,0 +1,8 @@
+@media (max-width: 500px) {
+  .rounded-circle {
+   margin: 0px !important;
+  }
+  .co {
+    margin-left: 0px !important;
+  }
+}
