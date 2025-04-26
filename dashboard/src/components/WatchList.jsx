@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { watchlist } from "../data/data";
 import { Tooltip, Grow } from "@mui/material";
 import { PieChart } from "./PieChart";
+import './Watchlist.css'
 
 const WatchList = () => {
   const labels = watchlist.map((stocks) => stocks.name); // ✅ labels go here
