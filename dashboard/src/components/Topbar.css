@@ -1,0 +1,12 @@
+@media (max-width: 500px) {
+    .indices-container {
+        display: none;
+    }
+    .topbar-container {
+        width: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+}

@@ -16,7 +16,7 @@ const Menu = () => {
     <div className="menu-container">
       <img src="logo.png" style={{ width: "4%" }} />
       <div className="menus">
-        <ul>
+        <ul className="menu-list">
           <li>
             <Link
               to="/"
